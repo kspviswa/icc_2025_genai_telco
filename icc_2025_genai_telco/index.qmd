@@ -1,0 +1,151 @@
+---
+title: "GenAI in Telcommunications"
+subtitle: "_Select papers from IEEE ICC 2025 Tutorial/Workshop_"
+author: "Viswa Kumar"
+format:
+  revealjs:
+    embed-resources: true
+    theme : serif
+    smaller: true
+    scrollable: true
+---
+
+## Paper 01 : NetOrchLLM
+
+:::: {.columns}
+
+::: {.column width="60%"}
+![](img/netorch_llm.png)
+:::
+
+::: {.column width="40%"}
+
+* LLM as _Intelligent router_
+* LLM as _Universal translator_
+* NetOrchLLM Framework
+    - <small>LLM acts as coordinator, understanding intent and picking the right expert model.</small>
+    - <small> Model repository holds the trusted analytical functions for wireless tasks.</small>
+    - <small> Heavy computation is delegated to these specialized models, not the LLM.</small>
+* In essence : Unstructured to structured repsentation translator
+:::
+
+::::
+
+Ref : https://arxiv.org/abs/2412.10107 
+
+---
+
+## Paper 01 : NetOrchLLM
+
+![](img/netorch_llm2.png)
+
+---
+
+## Paper 02 : ENWAR
+
+![](img/enwar_1.png)
+
+```{mermaid}
+flowchart LR
+  A[Sensory Inputs] --> B[Textual Representation] --> C[Reasoning] --> D[Structured Output] --> E[V2X App] --> F[Wireless Action]
+```
+
+Ref : https://arxiv.org/abs/2410.18104 
+
+---
+
+## Paper 02 : ENWAR
+
+![](img/enwar_2.png)
+![](img/enwar_3.png)
+
+---
+
+## Common Theme
+
+:::: {.columns}
+
+::: {.column width="40%"}
+Traditional Wireless System (Without LLM)
+```{mermaid}
+flowchart TD
+    A["Raw Sensory Data<br/>(GPS, Camera, LiDAR, Radio)"] --> B["Preprocessing/Feature Extraction"]
+    B --> C["Math/ML-based Algorithm<br/>(Beam Tracking, V2X Decisions, etc.)"]
+    C --> D["Structured Output/Action<br/>(Beam Angle, Network Command)"]
+    D --> E["Wireless System Actuation or V2X Application"]
+```
+:::
+
+::: {.column width="60%"}
+LLM-Based Wireless System (ENWAR/NetOrchLLM Style)
+```{mermaid}
+flowchart TD
+    A["Raw Sensory Data<br/>(GPS, Camera, LiDAR, Radio)"] --> B[Textualization<br/>Multi-Modal Embedding]
+    B --> C["RAG/Knowledge Retrieval<br/>+ Context Fusion"]
+    C --> D["LLM Reasoning<br/>(Interpret + Explain + Decide)"]
+    D --> E["Convert Decision<br/>to Structured Action"]
+    E --> F["Math/ML-based Algorithm<br/>(Precise Calculation)"]
+    F --> G["Structured Output/Action<br/>(Beam Angle, Network Command)"]
+    G --> H[Wireless System Actuation or V2X Application]
+```
+:::
+
+::::
+
+---
+
+## Paper 03 : NF Orch using LLMs
+
+:::: {.columns}
+
+::: {.column width="60%"}
+![](img/nfvo_1.png)
+:::
+
+::: {.column width="40%"}
+
+* 3 Agents (Router, Resolver, Translator)
+* Each agent backed by KB store.
+* Actual deployment is still by traditional tools
+
+#### Highlights
+
+* Highlevel control is _fixed_
+* Handle unstructed inputs
+
+#### Returning theme
+
+* Universal Translator / Router
+* Unstructured -> Sturctured
+:::
+
+::::
+
+---
+
+## Paper 04: Interface _On Demand_
+
+:::: {.columns}
+
+::: {.column width="60%"}
+![](img/iod_1.png)
+![](img/iod_2.png)
+:::
+
+::: {.column width="40%"}
+
+* 2 Agents (Match & CodeGen)
+* Match
+    - Maps user intent to closest interface (API, Func call etc)
+    - Instructs CodeGen to create wrappers
+* CodeGen
+    - Generate working code 
+
+#### Highlights
+- Instant Vendor interoperablity
+- On-Demand system integration
+- Spec to Code - a reality
+:::
+
+::::
+

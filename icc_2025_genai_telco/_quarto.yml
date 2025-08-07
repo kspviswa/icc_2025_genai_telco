@@ -1,0 +1,14 @@
+project:
+  type: website
+  output-dir: _site
+
+website:
+  title: "GenAI in Telcommunications (from IEEE ICC 2025 Tutorial/Workshop)"
+
+format:
+  html:
+    theme: serif
+
+
+
+

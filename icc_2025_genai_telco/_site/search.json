@@ -1,0 +1,65 @@
+[
+  {
+    "objectID": "index.html#paper-01-netorchllm",
+    "href": "index.html#paper-01-netorchllm",
+    "title": "GenAI in Telcommunications",
+    "section": "Paper 01 : NetOrchLLM",
+    "text": "Paper 01 : NetOrchLLM\n\n\n\n\n\nLLM as Intelligent router\nLLM as Universal translator\nNetOrchLLM Framework\n\nLLM acts as coordinator, understanding intent and picking the right expert model.\n Model repository holds the trusted analytical functions for wireless tasks.\n Heavy computation is delegated to these specialized models, not the LLM.\n\nIn essence : Unstructured to structured repsentation translator\n\n\nRef : https://arxiv.org/abs/2412.10107"
+  },
+  {
+    "objectID": "index.html#paper-01-netorchllm-1",
+    "href": "index.html#paper-01-netorchllm-1",
+    "title": "GenAI in Telcommunications",
+    "section": "Paper 01 : NetOrchLLM",
+    "text": "Paper 01 : NetOrchLLM"
+  },
+  {
+    "objectID": "index.html#paper-02-enwar",
+    "href": "index.html#paper-02-enwar",
+    "title": "GenAI in Telcommunications",
+    "section": "Paper 02 : ENWAR",
+    "text": "Paper 02 : ENWAR\n\n\n\n\n\n\nflowchart LR\n  A[Sensory Inputs] --&gt; B[Textual Representation] --&gt; C[Reasoning] --&gt; D[Structured Output] --&gt; E[V2X App] --&gt; F[Wireless Action]\n\n\n\n\n\n\nRef : https://arxiv.org/abs/2410.18104"
+  },
+  {
+    "objectID": "index.html#paper-02-enwar-1",
+    "href": "index.html#paper-02-enwar-1",
+    "title": "GenAI in Telcommunications",
+    "section": "Paper 02 : ENWAR",
+    "text": "Paper 02 : ENWAR"
+  },
+  {
+    "objectID": "index.html#common-theme",
+    "href": "index.html#common-theme",
+    "title": "GenAI in Telcommunications",
+    "section": "Common Theme",
+    "text": "Common Theme\n\n\nTraditional Wireless System (Without LLM)\n\n\n\n\n\nflowchart TD\n    A[\"Raw Sensory Data&lt;br/&gt;(GPS, Camera, LiDAR, Radio)\"] --&gt; B[\"Preprocessing/Feature Extraction\"]\n    B --&gt; C[\"Math/ML-based Algorithm&lt;br/&gt;(Beam Tracking, V2X Decisions, etc.)\"]\n    C --&gt; D[\"Structured Output/Action&lt;br/&gt;(Beam Angle, Network Command)\"]\n    D --&gt; E[\"Wireless System Actuation or V2X Application\"]\n\n\n\n\n\n\n\nLLM-Based Wireless System (ENWAR/NetOrchLLM Style)\n\n\n\n\n\nflowchart TD\n    A[\"Raw Sensory Data&lt;br/&gt;(GPS, Camera, LiDAR, Radio)\"] --&gt; B[Textualization&lt;br/&gt;Multi-Modal Embedding]\n    B --&gt; C[\"RAG/Knowledge Retrieval&lt;br/&gt;+ Context Fusion\"]\n    C --&gt; D[\"LLM Reasoning&lt;br/&gt;(Interpret + Explain + Decide)\"]\n    D --&gt; E[\"Convert Decision&lt;br/&gt;to Structured Action\"]\n    E --&gt; F[\"Math/ML-based Algorithm&lt;br/&gt;(Precise Calculation)\"]\n    F --&gt; G[\"Structured Output/Action&lt;br/&gt;(Beam Angle, Network Command)\"]\n    G --&gt; H[Wireless System Actuation or V2X Application]"
+  },
+  {
+    "objectID": "index.html#paper-03-nf-orch-using-llms",
+    "href": "index.html#paper-03-nf-orch-using-llms",
+    "title": "GenAI in Telcommunications",
+    "section": "Paper 03 : NF Orch using LLMs",
+    "text": "Paper 03 : NF Orch using LLMs\n\n\n\n\n\n3 Agents (Router, Resolver, Translator)\nEach agent backed by KB store.\nActual deployment is still by traditional tools\n\nHighlights\n\nHighlevel control is fixed\nHandle unstructed inputs\n\nReturning theme\n\nUniversal Translator / Router\nUnstructured -&gt; Sturctured"
+  },
+  {
+    "objectID": "index.html#paper-04-interface-on-demand",
+    "href": "index.html#paper-04-interface-on-demand",
+    "title": "GenAI in Telcommunications",
+    "section": "Paper 04: Interface On Demand",
+    "text": "Paper 04: Interface On Demand\n\n\n \n\n\n2 Agents (Match & CodeGen)\nMatch\n\nMaps user intent to closest interface (API, Func call etc)\nInstructs CodeGen to create wrappers\n\nCodeGen\n\nGenerate working code\n\n\nHighlights\n\nInstant Vendor interoperablity\nOn-Demand system integration\nSpec to Code - a reality"
+  },
+  {
+    "objectID": "icc_2025_genai_telco.html",
+    "href": "icc_2025_genai_telco.html",
+    "title": "icc_2025_genai_telco",
+    "section": "",
+    "text": "Quarto enables you to weave together content and executable code into a finished document. To learn more about Quarto see https://quarto.org."
+  },
+  {
+    "objectID": "icc_2025_genai_telco.html#quarto",
+    "href": "icc_2025_genai_telco.html#quarto",
+    "title": "icc_2025_genai_telco",
+    "section": "",
+    "text": "Quarto enables you to weave together content and executable code into a finished document. To learn more about Quarto see https://quarto.org."
+  }
+]
