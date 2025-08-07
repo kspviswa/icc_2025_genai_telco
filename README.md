@@ -1,0 +1,2 @@
+# icc_2025_genai_telco
+icc_2025_genai_telco
