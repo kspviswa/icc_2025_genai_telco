@@ -1,9 +1,10 @@
 ---
 title: "GenAI in Telcommunications"
 subtitle: "_Select papers from IEEE ICC 2025 Tutorial/Workshop_"
-author: "Viswa Kumar"
+author: '[Viswa Kumar](https://viswakumar.com)'
 format:
   revealjs:
+    footer: '[www.viswakumar.com](https://viswakumar.com)'
     embed-resources: true
     theme : serif
     smaller: true
